@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewSign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:gravity="center"
+        android:textSize="8pt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@id/textViewCounterSign"
+        />
+
+    <TextView
+        android:id="@+id/textViewCounterSign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:gravity="center"
+        android:textSize="8pt"
+        android:layout_above="@id/editTextSign"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:id="@+id/editTextSign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="20dp"
+        />
+
+    <Button
+        android:id="@+id/btnSetAsSign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/editTextSign"
+        android:layout_marginTop="5dp"
+        android:text="@string/set_as_sign"
+        android:onClick="onBtnSetAsSignClick"
+        />
+
+    <Button
+        android:id="@+id/btnSetAsCounterSign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btnSetAsSign"
+        android:layout_marginTop="5dp"
+        android:text="@string/set_as_countersign"
+        android:onClick="onBtnSetAsCounterSignClick"
+        />
+
+    <Button
+        android:id="@+id/btnClearSigns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btnSetAsCounterSign"
+        android:layout_marginTop="5dp"
+        android:text="@string/clear_all"
+        android:onClick="onBtnClearSignsClick"
+        />
+
+</RelativeLayout>
